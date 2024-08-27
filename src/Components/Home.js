@@ -17,7 +17,7 @@ export default function Home() {
     setcheckedValue("");
     const resp = await fetch(api);
     const data = await resp.json();
-    console.log(data);
+    // console.log(data);
     const main = data[0].question;
     // console.log(main);
     setQuestion(main.text);
